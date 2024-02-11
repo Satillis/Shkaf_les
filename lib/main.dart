@@ -16,96 +16,170 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: ColumsHome()
+        home: Shkaf()
     );
   }
 }
 
-class ColumsHome extends StatelessWidget {
-  const ColumsHome({Key? key}) : super(key: key);
+class Shkaf extends StatelessWidget {
+  const Shkaf({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Column'),
+          title: const Text('Шкаф'),
           backgroundColor: const Color(0x9C879BFF),
         ),
-        body: Align(
-            alignment: Alignment.center,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                    margin: const EdgeInsets.all(8.0),
-                    width: 256,
-                    height: 64,
-                    decoration: BoxDecoration(
-                        color: const Color(0x2C77D49C),
-                        borderRadius: BorderRadius.circular(12)
-                    ),
-                    child:const Center(
-                      child: Text('Just a text',
-                        style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black
+        body: Container(
+          padding: const EdgeInsets.all(4.0),
+          color: Colors.brown,
+          child: Row(
+            children: [
+              Expanded(child:
+              Column(
+                children: [
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.pink,
+                      child: Center(
+                        child: Text(
+                            '1',
+                            style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.cyanAccent
+                            )
                         ),
                       ),
-                    )
-                ),
-                Container(
-                    margin: const EdgeInsets.all(8.0),
-                    width: 256,
-                    height: 64,
-                    decoration: BoxDecoration(
-                        color: const Color(0x2F877D1D),
-                        borderRadius: BorderRadius.circular(12)
                     ),
-                    child:const Center(
-                      child: Text('Just a text',
-                        style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black
+                    flex: 3,
+                  ),
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.blueAccent,
+                      child: Center(
+                        child: Text(
+                            '3',
+                            style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.redAccent
+                            )
                         ),
                       ),
-                    )
-                ),
-                Container(
-                    margin: const EdgeInsets.all(8.0),
-                    width: 256,
-                    height: 64,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(12)
                     ),
-                    child:const Center(
-                      child: Text('Just a text',
-                        style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black
+                    flex: 1,
+                  ),
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.orange,
+                      child: Center(
+                        child: Text(
+                            '5',
+                            style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.blueAccent
+                            )
                         ),
                       ),
-                    )
-                ),
-                Container(
-                    margin: const EdgeInsets.all(8.0),
-                    width: 256,
-                    height: 64,
-                    decoration: BoxDecoration(
-                        color: Colors.pink,
-                        borderRadius: BorderRadius.circular(12)
                     ),
-                    child:const Center(
-                      child: Text('Just a text',
-                        style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black
+                    flex: 1,
+                  ),
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.purple,
+                      child: Center(
+                        child: Text(
+                            '7',
+                            style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.lightGreenAccent
+                            )
                         ),
                       ),
-                    )
-                ),
-              ],
-            )
+                    ),
+                    flex: 3,
+                  ),
+                ],
+              ),
+                flex: 1,
+              ),
+              Expanded(child:
+              Column(
+                children: [
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.black,
+                      child: Center(
+                        child: Text(
+                            '2',
+                            style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white
+                            )
+                        ),
+                      ),
+                    ),
+                    flex: 3,
+                  ),
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.green,
+                      child: Center(
+                        child: Text(
+                            '4',
+                            style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.pinkAccent
+                            )
+                        ),
+                      ),
+                    ),
+                    flex: 1,
+                  ),
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.grey,
+                      child: Center(
+                        child: Text(
+                            '6',
+                            style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white60
+                            )
+                        ),
+                      ),
+                    ),
+                    flex: 1,
+                  ),
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.yellow,
+                      child: Center(
+                        child: Text(
+                            '2',
+                            style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.deepPurpleAccent
+                            )
+                        ),
+                      ),
+                    ),
+                    flex: 3,
+                  ),
+                ],
+              ),
+                flex: 1,
+              ),
+            ],
+          ),
         )
     );
   }
